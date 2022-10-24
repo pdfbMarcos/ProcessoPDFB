@@ -35,7 +35,7 @@ function DigDocumentScreen({ route, navigation }) {
   const today = new Date().toJSON().slice(0, 10).replace(/-/g, "-");
   const data = [{ value: "Sim" }, { value: "Não" }];
 
-  const [option, setOption] = useState(null);
+  const [option, setOption] = useState("Sim");
 
   const handleSubmit = async (newDocumentInfo, { resetForm }) => {
     if (option === null) {
@@ -103,11 +103,7 @@ function DigDocumentScreen({ route, navigation }) {
         />
         <View style={{ flexDirection: "row" }}>
           <Text style={styles.paragraph}>Fazer fotos?</Text>
-          <RadioButton
-            data={data}
-            keyExtractor={(data) => data.value}
-            onSelect={(value) => setOption(value)}
-          />
+          <RadioButton data={data} onSelect={(value) => setOption(value)} />
         </View>
         <ListItemSeparator />
         <ListItemSeparator />

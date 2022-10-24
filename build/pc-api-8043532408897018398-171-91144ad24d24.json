@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pc-api-8043532408897018398-171",
+  "private_key_id": "91144ad24d24edaaa123ba51538c4c677ba434ae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC90UGpJDipPjk9\nlluRPuMLbK4GsX9W9wwJOxfRNZUqx1dG539oUtns5iiQz4Ma7UtJ9xgmuQABETlB\nQrK7F7sDUofP5OSiUx3lUIscSlxZjdkACmSImSNYswVe2ejaUYjL1+IAwvTnaVD6\nK5fBCj343Q8w9pHn6NYi06Is0xqFHNVIG2/CNt/vMRp8DcWBG40ZGjw8Q/jKD8My\nndRz66hYfTA1BGaWaDPwTiVYLKP1TyXC2N8wdKwpoIoc2eCawZ2cSulsIlJt0/7r\nmnYH6fCLEQ4a2Af4q/qJmehTIHgyY+QXdIWcFv3S68Hg/HXZsy3m5BEENJb+Sura\nJOuoWMOdAgMBAAECggEAGkqhOyHavUpymD66ySf6P8taYW/1cODAKIkoV+CBnE7H\nHnmTMqqDJ+aLSN+NS84BZynUDQ0D3KH7mbf41KRJUYD9ccTFDFzR38Dju9Pq7baR\nj4lg+nCnrjIBtO0e7RptBbsNwUg/rsvuHPCr0N+vzMglwgTtGb+s5V8F8Ap/el9S\nMJ5xq5MSQm8se3QNZBDliWKxcPFpCBq1jkFb1jTMQvtaGD7BG0abk9sN2tMR7jUU\nc/l7ViQDN0JwxJENa2Wxz7NoC7O3BsGG900mRKr0vfrLtQTxWEbSJEcWHIa6WawC\n2B3eqtIy5xEZR3elEnyPHnKyrJuk4hd1U4U1VEgcCwKBgQDx8ALyX3Ti+pTbQDcC\n1WIKa/A72RGgA6igyOT/70MFQ6RtO+ncUjSJtGRc47AMEtXDKorw89LzxdBDc8cY\nbWUwxJCjbsw/DUeqxmoV++j41UZpNZms/ly60UZaOcTVMh7PevmQP0vyjrSxdriR\nKb+TtTvHnrmMXYmkjral6IzhYwKBgQDI2bTYa4WK7BTMDgnduhXTUzVmXFHVprnG\nUlhkZqJkK31Jnmz6QQ0hsnDZQKPikZsU3qtTVgutfxSCTn6yHGFlmQse1CBYX4gJ\nKXyIGSrn60Zb+KuVgQYf3REPD9D1dyEfflOmyZWm7onh6KcemHhUhY/x/bQxOrKn\nhS/ILo9W/wKBgQDdjl4kdyYjdjY7UmMORTqzMIWfSPnK/469LzwG5KULfRZmsidH\njEBwmrIOHrRpWhZH0/3JCoB0nQJLwwrgY833Cwspn52LYC3xRiKAX2DJ/wWr81n4\nAjgJHPzAQ4btdiig+IzyfASg6+6tVXtP9FtseNt1wvVIhaA3AjphVMUu4QKBgGWY\nKa/nA0+4BvUIjNkJDY0tY695NzO49/NnJ6rxd2bv0JnydvFHAltvJUHfPoaWXDl8\nQHEQ7ys9QqR/C/sP+/wmI8feSNYqzGbGA2XcRSW2joprCG/BKdXoPn6941amgayq\ne6m8AeTEeB47Tn1dZlBqltszF3hnVoMCDZ9WXc8FAoGAVw7Ed0mLtqN91iojrRzl\n6WdJUuz6IMLRyhXvpJqv6302Y5NsSNGMH88Zy7eMmnqZVMfCrP69TH2h57/MLFEA\n2r8tidzCH9KIWY3tJYlTH+eNnc3KkU8PFjUZrm6WUjud5JspoNa35K4vzG2S7Zmm\nfHYOmE/ybc4ub67Zmv7w4Ww=\n-----END PRIVATE KEY-----\n",
+  "client_email": "expo-pdfb-processo@pc-api-8043532408897018398-171.iam.gserviceaccount.com",
+  "client_id": "102530681263222475125",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/expo-pdfb-processo%40pc-api-8043532408897018398-171.iam.gserviceaccount.com"
+}

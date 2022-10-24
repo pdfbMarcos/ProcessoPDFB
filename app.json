@@ -18,16 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pdfb.pdfb-processo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./app/assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.pdfb.pdfb_processo"
     },
     "web": {
       "favicon": "./app/assets/icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d7a06d2d-e249-4871-905e-df898f436b9a"
+      }
     }
   }
 }

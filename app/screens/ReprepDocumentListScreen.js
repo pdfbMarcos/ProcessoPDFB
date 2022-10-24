@@ -36,7 +36,6 @@ function ReprepDocumentsListScreen({ navigation }) {
     tipo = tipo === "" ? "p" : tipo;
 
     getDocumentsApi.request("/" + project + parametros + "/rep" + "/" + tipo);
-    console.log("/" + project + parametros + "/rep" + "/" + tipo);
   };
 
   return (

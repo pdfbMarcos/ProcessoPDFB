@@ -23,7 +23,7 @@ function WelcomeScreen({ navigation }) {
       <View style={styles.buttonsContainer}>
         <Button
           title="UQGQPA"
-          color="secondary"
+          color="mediumBlue"
           onPress={() => {
             navigation.navigate(routes.MENUSCREEN);
             projectContext.setProject("uqgqpa");
@@ -31,6 +31,7 @@ function WelcomeScreen({ navigation }) {
         />
         <Button
           title="UQCQPA"
+          color="secondary"
           onPress={() => {
             navigation.navigate(routes.MENUSCREEN);
             projectContext.setProject("uqcqpa");
@@ -52,19 +53,29 @@ function WelcomeScreen({ navigation }) {
             projectContext.setProject("inovat");
           }}
         />
-      </View>
-      <View style={styles.buttonsContainer}>
         <Button
-          title="Caixas - UQGQPA"
-          color="secondary"
+          title="UQCQDF"
+          onPress={() => {
+            navigation.navigate(routes.MENUSCREEN);
+            projectContext.setProject("uqcqdf");
+          }}
+        />
+      </View>
+      <View style={styles.buttonsContainerCxs}>
+        <Button
+          title="Cxs-UQGQPA"
+          color="mediumBlue"
+          width={175}
           onPress={() => {
             navigation.navigate(routes.CHECKBOXLIST);
             projectContext.setProject("uqgqpa");
           }}
         />
         <Button
-          title="Caixas - INOVATGQ"
+          title="Cxs-INOVATGQ"
           color="medium"
+          width={180}
+          marginLeft={10}
           onPress={() => {
             navigation.navigate(routes.CHECKBOXLIST);
             projectContext.setProject("inovatgq");
@@ -84,6 +95,11 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     padding: 20,
     width: "100%",
+  },
+  buttonsContainerCxs: {
+    padding: 20,
+    width: "100%",
+    flexDirection: "row",
   },
   logo: {
     borderRadius: 25,

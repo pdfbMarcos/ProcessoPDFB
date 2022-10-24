@@ -19,7 +19,7 @@ function CheckBoxListScreen({ navigation }) {
 
   const getDocumentsApi = useApi(documentApi.getDocuments);
   useEffect(() => {
-    getDocumentsApi.request("/" + project + "/ /cxs");
+    getDocumentsApi.request("/" + project + "/x/x/x/cxs/p");
   }, []);
   const dataDocuments = getDocumentsApi.data;
 
@@ -44,11 +44,25 @@ function CheckBoxListScreen({ navigation }) {
         "Não foi possivel atualizar o documento!" + result.originalError
       );
     }
-    alert("Sucesso!");
+    alert("Sucesso! Documento conferido!");
   };
 
-  const handleRefresh = async ({ caixa }) => {
-    getDocumentsApi.request("/" + project + "/" + caixa + "/cxs");
+  const handleRefresh = async ({ caixa, material, lote }) => {
+    let parametros = "";
+    parametros = caixa ? "/" + caixa : "";
+    parametros = parametros + (material ? "/" + material : "");
+    parametros = parametros + (lote ? "/" + lote : "");
+    parametros = parametros + (caixa ? "" : "/x");
+    parametros = parametros + (material ? "" : "/x");
+    parametros = parametros + (lote ? "" : "/x");
+
+    let tipo = "";
+    tipo = caixa ? "c" : "";
+    tipo = tipo + (material ? "m" : "");
+    tipo = tipo + (lote ? "l" : "");
+    tipo = tipo === "" ? "p" : tipo;
+
+    getDocumentsApi.request("/" + project + parametros + "/cxs" + "/" + tipo);
   };
 
   return (
@@ -59,6 +73,8 @@ function CheckBoxListScreen({ navigation }) {
       <Form
         initialValues={{
           caixa: "",
+          material: "",
+          lote: "",
         }}
         onSubmit={handleRefresh}
       >
@@ -69,7 +85,25 @@ function CheckBoxListScreen({ navigation }) {
             icon="archive"
             name="caixa"
             placeholder="caixa"
-            width={175}
+            width={180}
+          />
+          <FormField
+            autoCapitalize="characters"
+            autoCorrect={false}
+            icon="beaker-outline"
+            name="material"
+            placeholder="material"
+            width={180}
+          />
+        </View>
+        <View style={styles.filter}>
+          <FormField
+            autoCapitalize="characters"
+            autoCorrect={false}
+            icon="sitemap"
+            name="lote"
+            placeholder="lote"
+            width={180}
           />
           <SubmitButton marginLeft={5} title="Filtrar" width={175} />
         </View>
@@ -119,7 +153,9 @@ const styles = StyleSheet.create({
   },
   filter: {
     flexDirection: "row",
-    marginLeft: 15,
+    justifyContent: "space-between",
+    paddingStart: 10,
+    paddingEnd: 10,
   },
 });
 

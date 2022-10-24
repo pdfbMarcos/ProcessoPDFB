@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Pressable, StyleSheet, Text, View } from "react-native";
 
 import colors from "../config/colors";
-import TextInput from "./TextInput";
 
 export default function RadioButton({ data, onSelect }) {
   const [userOption, setUserOption] = useState(null);
@@ -16,6 +15,7 @@ export default function RadioButton({ data, onSelect }) {
       {data.map((item) => {
         return (
           <Pressable
+            key={item.value}
             style={
               item.value === userOption ? styles.selected : styles.unselected
             }

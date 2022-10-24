@@ -28,7 +28,8 @@ function AddDocumentScreen({ navigation, route }) {
     const result = await documentApi.addDocument(document);
 
     if (!result.ok) {
-      return alert("Could not save the document!");
+      //console.log(result.originalError);
+      return alert("Could not save the document! (" + result.status + ")");
     }
     alert("Success!");
 
